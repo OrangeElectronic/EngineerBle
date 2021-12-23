@@ -44,8 +44,8 @@
             android:layout_weight="1"
 
             android:background="@color/color_title_bg"
-            android:text="@string/cancel"
+            android:text="cancel"
             android:textColor="@android:color/background_light"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
     </LinearLayout>
 </RelativeLayout>

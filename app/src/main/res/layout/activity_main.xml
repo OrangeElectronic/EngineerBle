@@ -56,10 +56,27 @@
                     android:hint="ID4" android:inputType="number" android:maxLength="8"
                     android:textColor="@color/color_black" android:textSize="20sp"/>
             </LinearLayout>
-            <Button
-                android:id="@+id/button3"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp" android:layout_weight="1" android:text="傳送OBD"/>
+                android:layout_height="match_parent"
+                android:layout_weight="1" android:orientation="horizontal">
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" android:layout_weight="1" android:text="藍芽廣播"/>
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" android:layout_weight="1" android:text="傳送OBD"/>
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:text="ogl_start"/>
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:text="OGL_END"/>
+            </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
     <LinearLayout
@@ -151,5 +168,50 @@
             android:layout_alignParentEnd="true"
             android:text="傳送"/>
     </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ogl_mode"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/color_white" android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1" android:text="連線"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1" android:text="開始"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1" android:text="結束"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/rftest"
+        android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/color_white"
+        android:orientation="vertical" android:visibility="visible">
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1" android:text="RF開始"/>
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1" android:text="LF開始"/>
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" android:gravity="center" android:text="接收筆數："
+            android:textColor="@color/color_black"/>
+    </LinearLayout>
 
 </RelativeLayout>

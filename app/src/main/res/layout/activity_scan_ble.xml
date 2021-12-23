@@ -22,9 +22,9 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:text="@string/SelectDevice"
+            android:text="select"
             android:textColor="@android:color/background_light"
-            android:textSize="28sp" />
+            android:textSize="28sp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/re"
@@ -52,9 +52,9 @@
                 android:layout_marginEnd="0.5dp"
                 android:layout_weight="1"
                 android:background="@color/color_red"
-                android:text="@string/cancel"
+                android:text="close"
                 android:textColor="@android:color/background_light"
-                android:textSize="28sp" />
+                android:textSize="28sp"/>
 
             <Button
                 android:id="@+id/rescan"

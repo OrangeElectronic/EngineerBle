@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.3"
     defaultConfig {
         applicationId "com.orango.electronic.engineerble"
-        minSdkVersion 26
+        minSdkVersion 21
         targetSdkVersion 31
         versionCode 22
         versionName "2.2"
